@@ -1,0 +1,86 @@
+
+h3{
+    text-align: center;
+    font-size: 2em;
+    text-decoration:underline;
+    color: #0066FF;
+    margin-top: 0.3em;
+}
+
+.featured{
+    background: rgb(0,102,255);
+background: linear-gradient(180deg, rgba(0,102,255,0.17440479609812676) 0%, rgba(0,102,255,0.5329482134650736) 100%);
+    padding-bottom: 2em;
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    p{
+        padding-top: 1em;
+        font-size: 2em;
+        color: #0066FF;
+        font-weight: lighter;
+    }
+    .skill-card{
+        box-shadow: 0 10px 8px rgba(0, 0, 0, 0.205);
+        border-radius: 5%;
+        width: 300px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4em;
+        padding: 1em;
+        background-color: white;
+        .skill-logo{
+            margin-top: 2em;
+            margin-bottom: 1em;
+            width: 20%;
+        }
+        .skill-name{
+
+            text-decoration: underline;
+        }
+        .skill-desc{
+            padding: 2em;
+        }
+    }
+    .category-skills{
+        
+        h4{
+            text-decoration: underline;
+            color: #0066FF;
+        }
+        .category{
+            padding-bottom: 2em;
+            display: flex;
+            .skill-element{
+                color: rgb(73, 73, 73);
+                width: fit-content;
+                padding: 1.5em;
+                padding-top: 0;
+                padding-bottom: 0.5em;
+                margin: auto;
+                &:hover{
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
+                }
+
+            }
+
+        }
+    }
+}
+
+.skill-logo.django{
+    padding-top: 2em;
+    padding-bottom: 0.2em;
+}
+
+
+
+@media only screen and (min-width: 1200px){
+    .featured{
+
+    .featured-skills{
+        display: flex;
+    }
+}
+}

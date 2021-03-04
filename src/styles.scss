@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;500;600&display=swap');
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.nav-container{
+    background-color: #0066FF;
+    a{
+        color: white;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2em;
+        font-size: 1.2em;
+        .logo{
+            color: #63F5FF;
+            font-weight: 500;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+            ul{
+                display: flex;
+                li{
+                    font-weight: 300;
+                    display: block;
+                    padding: 0 1em;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+    }
+}
+
+.social-header,.design{
+    display: none;
+}
+
+.hero{
+    background: #006FFF;
+    display: grid;
+    text-align: center;
+    padding: 3em;
+    .explore{
+        padding: 0.5em 1em;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 0.2em;
+        width: 40%;
+        margin: auto;
+        border: none;
+        &:hover{
+            text-decoration: underline;
+            font-weight:bold ;
+                background: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.content{
+    h1{
+        color: white;
+    }
+}
+.myimage{
+    align-items: center;
+}
+.mypic{
+    border-radius: 50%;
+    width: 70%;
+    margin-bottom: 2em;
+}
+
+.navigations{
+    text-align: center;
+    font-size: 2em;
+    color: #006FFF;
+    font-weight: 300;
+    &:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.footer{
+    background: #006FFF;
+    align-items: center;
+    text-align: center;
+    color: white;
+    .contactme{
+        font-size: 2em;
+        padding-top: 1em;
+    }
+    .email-logo{
+        width: 15%;
+        &:hover{
+            width: 20%;
+        }
+    }
+    .details{
+        padding: 1em;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+    }
+}
+
+
+@media only screen and (min-width: 750px){
+    .logo,.navs,.explore{
+        font-size: 1.6em;
+    }
+    .navigations{
+        font-size: 3em;
+    }
+    .welcome{
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    
+}
