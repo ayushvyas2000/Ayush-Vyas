@@ -1,0 +1,58 @@
+
+h3{
+    text-align: center;
+    font-size: 2em;
+    text-decoration:underline;
+    color: #0066FF;
+    margin-top: 0.3em;
+}
+
+.featured{
+    background: rgb(0,102,255);
+    background: linear-gradient(180deg, rgba(0,102,255,0.17440479609812676) 0%, rgba(0,102,255,0.5329482134650736) 100%);
+    padding-bottom: 2em;
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    p{
+        padding-top: 1em;
+        font-size: 2em;
+        color: #0066FF;
+        font-weight: lighter;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .desc{
+        text-align: justify;
+        padding: 1.5em;
+        padding-top: 0;
+        padding-bottom: 0;
+        &:hover{
+            font-size: larger;
+        }
+    }
+    .intro{
+        padding: 1em;
+        font-size: larger;
+        text-align: justify;
+    }
+    .category{
+        padding-bottom: 2em;
+        display: flexbox;
+        .skill-element{
+            display: flexbox;
+            color: rgb(73, 73, 73);
+            width: fit-content;
+            padding: 0.5em;
+            padding-top: 0;
+            padding-bottom: 0.5em;
+            margin: auto;
+            &:hover{
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
+            }
+
+        }
+
+    }
+}

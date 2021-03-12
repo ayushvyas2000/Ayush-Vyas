@@ -1,0 +1,103 @@
+.hero{
+    background: #006FFF;
+    display: grid;
+    text-align: center;
+    padding: 3em;
+    .explore{
+        padding: 0.5em 1em;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 0.2em;
+        width: 40%;
+        margin: auto;
+        border: none;
+        &:hover{
+            text-decoration: underline;
+            font-weight:bold ;
+                background: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+.content{
+    h1{
+        color: white;
+    }
+}
+.myimage{
+    align-items: center;
+}
+.mypic{
+    border-radius: 50%;
+    width: 70%;
+    margin-bottom: 2em;
+}
+
+.navigations{
+    text-align: center;
+    font-size: 2em;
+    color: #006FFF;
+    font-weight: 300;
+    &:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.footer{
+    background: #006FFF;
+    align-items: center;
+    text-align: center;
+    color: white;
+    .contactme{
+        font-size: 2em;
+        padding-top: 1em;
+    }
+    .email-logo{
+        width: 15%;
+        &:hover{
+            width: 20%;
+        }
+    }
+    .details{
+        padding: 1em;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+    }
+}
+
+.popsocials{
+    display: block;
+    border-radius: 15px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    ul{
+        display: flex;
+        justify-content: center;
+    .socialicon{
+        width: 30%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+}
+.full{
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+.close{
+    padding-bottom: 0.5em;
+    border: 0;
+    &:hover{
+        cursor: pointer;
+    }
+}

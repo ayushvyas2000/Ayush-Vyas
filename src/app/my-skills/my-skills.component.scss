@@ -9,7 +9,7 @@ h3{
 
 .featured{
     background: rgb(0,102,255);
-background: linear-gradient(180deg, rgba(0,102,255,0.17440479609812676) 0%, rgba(0,102,255,0.5329482134650736) 100%);
+    background: linear-gradient(180deg, rgba(0,102,255,0.17440479609812676) 0%, rgba(0,102,255,0.5329482134650736) 100%);
     padding-bottom: 2em;
     display: flexbox;
     text-align: center;
@@ -23,7 +23,7 @@ background: linear-gradient(180deg, rgba(0,102,255,0.17440479609812676) 0%, rgba
     .skill-card{
         box-shadow: 0 10px 8px rgba(0, 0, 0, 0.205);
         border-radius: 5%;
-        width: 300px;
+        width: 275px;
         height: 350px;
         margin-left: auto;
         margin-right: auto;
@@ -41,6 +41,7 @@ background: linear-gradient(180deg, rgba(0,102,255,0.17440479609812676) 0%, rgba
         }
         .skill-desc{
             padding: 2em;
+            font-size: 0.8em;
         }
     }
     .category-skills{
@@ -55,7 +56,7 @@ background: linear-gradient(180deg, rgba(0,102,255,0.17440479609812676) 0%, rgba
             .skill-element{
                 color: rgb(73, 73, 73);
                 width: fit-content;
-                padding: 1.5em;
+                padding: 0.5em;
                 padding-top: 0;
                 padding-bottom: 0.5em;
                 margin: auto;

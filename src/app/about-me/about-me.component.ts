@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import {gsap} from 'gsap';
+import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -7,9 +9,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
-
+  @ViewChild('aboutMe', { static: true }) aboutMe: ElementRef<HTMLDivElement>;
+ 
+  constructor(@Inject(DOCUMENT) private document: Document) { 
+} 
+  
   ngOnInit(): void {
+    this.initialAnimations();
   }
 
+  getSocials()
+  {
+    var overlay=document.getElementById("overlay");
+    overlay.style.display="block";
+  }
+  closeSocials()
+  {
+    var overlay=document.getElementById("overlay");
+    overlay.style.display="none";
+  }
+
+  initialAnimations(): void
+  {
+    gsap.from(this.aboutMe.nativeElement.childNodes,{
+      duration:0.7,
+      opacity: 0,
+      y:-20,
+      stagger:0.2,
+      delay: 0.5,
+    }
+    )
+}
 }

@@ -1,11 +1,27 @@
-<div class="hero">
+<div class="hero" #hero>
     <div class="content">
         <h1 class="welcome">WELCOME TO MY WORLD</h1>
         <div class="myimage"></div>
-        <img src="assets/resume.jpeg" alt="" class="mypic">
+        <img src="assets/images/resume.jpg" alt="" class="mypic">
     </div>
 
-    <button class="explore">EXPLORE</button>
+    <button class="explore" (click)="getSocials()">EXPLORE</button>
+    <div class="full" id="overlay">
+    <div class="popsocials">
+        <ul>
+            <li>
+               <a href="" target="blank"> <img class="socialicon 1" src="../../assets/images/linkedin.png" alt=""> </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ayushvyasforreal/" target="blank"><img class="socialicon 2" src="../../assets/images/instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img class="socialicon 3" src="../../assets/images/twitter.png" alt=""></a>
+            </li>
+        </ul>
+        <button class="close" (click)="closeSocials()">Close</button>
+    </div>
+</div>
     <svg class="design" id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg"
         width="523.805" height="1031.455" viewBox="0 0 523.805 1031.455">
         <path id="Rectangle_5" data-name="Rectangle 5"
@@ -17,7 +33,8 @@
     </svg>
 </div>
 
-<section class="clickables">
+<div class="newdiv" #clickables>
+<section class="clickables" >
     <a href="" class="navigations" routerLink="/About-Me">
         <p>ABOUT ME</p>
     </a>
@@ -28,9 +45,9 @@
         <p>MY SKILLS</p>
     </a>
 </section>
-<div class="footer">
+</div>
+<div class="footer" #footer>
     <div class="contactme">CONTACT ME</div>
-    <a href=""><img class="email-logo" src="assets/NoPath - Copy.svg" alt=""></a>
     <div class="details">+91 9079883270 | ayush.vyas.india@gmail.com</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
